@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><title>きょうのミッション</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="ミッション"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#3b5bff"><link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFLklEQVR4nO3d23HbMBRFUSiTctyBS3F9KSUduB/nQzMKh+SB+ADBc3H3+srkYcPk9gUkW87j8+unAGt+3b0A+CIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMRRSil//zze/k5Cv+9egAtqWGJyyCzIhTggZY+D8VCRPY665OkQB6TUcWwZDJmHR+o4UJc3jtWR8PPdfyG+8saxXdqdhTj+Y2zMJI2jMgxI5CVpHHvl3FkyxvH2KMrweMoYxzEJhwdxlMKoENLFsXEAkEtJGMcZ2XaWXHHwrOguueLYhWiyx7G3gFQ7S6I4DtzX5MMjURyt5BkeWeLgKHpAljgOyxxQ3jjO3PUkO0uKOJLcy+ZSxHFS2p1l/DguOopmmEbjx9FEzuGRMY5Wd3r44TF4HMPfv0sNHkdDCXeWkePo8Kzo2JNp5DhwUq44To6NbDvLsHF0G/gD7yzDxnGRVMNjzDg6f4F+1OHh/qMmo1z3Y+v8/PppvpKGHtetz+q+th0bj4+Wb+2k6+7gVduKVRlju+5Sj3nmmGl+2khyLB0/jotuZIY+3A+kzvfg/Nqszi5L9xxInW+5p0pG8Q6kpbpo888YN7eUUS6dHC9qhDA/tlBldLhxPQ6k6sN4fDBCairXp8+zZ50erbDF7HXXVjLV76EsfWznUEbpc+aY4QhSd+9WMnXDk2AcQZTbDxkz9zxDyhazZLKVTN329Dl9TBmWUe792gp9PHmWUW45kC5lPqJaHTJmLL4qm/OI6nb8XLKIo+TbYmy3kimXOEqmPkKUUaziKDn6iFJGMTmQLo16RDU/ZMx4TY6X8Y6o/sfPJdM4ylhbTKCtZMo3jjJKH0HLKLZnjpm4R5BwW8mU9eR4iXgEiXjImIkRR4m2xcTdSqbCxFHi9DFGGSVWHCVCH8OUUfxf8bb0vMSxXqgdLounYJMDPREHpHHiMHnOw2QZTYwTB5oLGUes02gJuOCnkHGgj0HisNrprRZzRrw4go7oiMuOFwe6GSEOwzFuuKQDRogDFwkWR8Sd+yXc4oPFgZ7Cx2G7u9subLtIcVw9ljt8R0isnSXe93Nc4ZXF8xcDfNI3EWlyLDW5i8uB0WqERI8s9eSoRMAIKYEmR/Pdest4uOIUEujYkXFy7LrlmUdImMmxdOyGHRsGh0dI6KpixNFkFG95eVz9pQ+tdpkoO0uWbWV7FvWXPjw+Yg+DXWJMjqXtd+jYwGg4QuLGNPjkOLOPMEICTI5jO/TJE8aWv3PmFBLi2DHm5GiSxewvJxwhASbHUuVmtBoYu/7V23catB73n+yz+vm6eq23TPgmH+yx//VydXnmFz/k5FjqVkb97Tj/pKED4p05Zp+dPbOYvcFdp5Cf73jdxJ4cW44X143u4UeIdRyV3f26g+cu9fjertD8Aa11HMq9A2P13ak/Cj1C4sXhMDBW3+nbERLuAa3vQ9kDI9fhYwm67FXxJodicok772iXGiEOw/vhtp5jwsdhexsMk93LNI4tO3eIq79lhbYPaE3jeMs/i5cQEa8yjaP+PTgRr/Xb7yoyZBqHYnsdtwiXtW8cs+sY7soqy4/rrpW85fskGG7nOzlwO+KARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAPSP35lr1xR6yh+AAAAAElFTkSuQmCC">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#3b5bff;--yel:#ffd400;--grn:#3ddc55;--red:#ff4d6d;--pur:#b266ff;--ink:#111;--mute:#4b5599;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html,body{height:100%;margin:0}
+body{background:repeating-linear-gradient(45deg,#3b5bff 0 26px,#3452ee 26px 52px);background-color:var(--blue);color:#fff;font-family:"M PLUS Rounded 1c","Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN",sans-serif;font-weight:800;font-size:18px;line-height:1.5}
+.app{height:100%;max-width:560px;margin:0 auto;padding:10px 14px 14px;display:flex;flex-direction:column;gap:10px}
+.top{display:flex;gap:8px}
+.stat{flex:1;text-align:center;padding:3px 6px;background:#fff;color:var(--ink);border:3px solid #000;border-radius:999px;box-shadow:0 4px 0 #000;font-size:16px}
+.stat b{font-weight:800}
+main{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.win{background:#fff;color:var(--ink);border:4px solid #000;border-radius:16px;box-shadow:0 6px 0 #000;padding:14px 16px}
+h1{font-size:28px;margin:0;color:var(--yel);font-weight:800;text-align:center;-webkit-text-stroke:0;text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000,0 4px 0 #000}
+p{margin:0}.c{text-align:center}.mute{color:#e5eaff;font-size:16px}.win .mute{color:var(--mute)}
+button{font:inherit;color:var(--ink);cursor:pointer;background:#fff;border:4px solid #000;border-radius:16px;box-shadow:0 6px 0 #000;padding:12px 10px;min-height:56px;width:100%}
+button:active{transform:translateY(4px);box-shadow:0 2px 0 #000}
+button:focus-visible{outline:4px solid #fff;outline-offset:3px}
+.big{display:flex;align-items:center;gap:12px;text-align:left;font-size:24px;min-height:78px}
+.big.k{background:var(--yel)}.big.m{background:var(--pur)}
+.big small{display:block;font-size:15px;color:#333}
+.ic{font-size:40px}
+.gold{background:var(--grn);color:#fff;font-size:22px;text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000,0 3px 0 #000}
+.ghost{background:#ffffff26;color:#fff;border:3px solid #ffffff88;box-shadow:none;min-height:44px;font-size:15px}
+.ghost:active{transform:none;box-shadow:none}
+.q{font-size:26px;text-align:center;padding:20px 12px}
+.q u{color:#7a2cff;text-decoration-thickness:4px;text-underline-offset:5px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.opts button{font-size:22px;min-height:72px}
+.opts button:nth-child(1){background:#ffe45c}.opts button:nth-child(2){background:#9be7ff}.opts button:nth-child(3){background:#ffb3d1}.opts button:nth-child(4){background:#c9f7a5}
+.dots{display:flex;gap:10px;justify-content:center}
+.dots i{width:18px;height:18px;background:#fff;border:3px solid #000;border-radius:5px;transform:rotate(45deg);opacity:.5}
+.dots i.on{background:var(--yel);opacity:1}
+.fr{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;line-height:1.1;margin:0 2px}
+.fr b{font-weight:800;border-bottom:3px solid currentColor;padding:0 4px}.fr i{font-style:normal}
+.win.ok{background:#d6ffdc}.win.no{background:#ffe0e6}
+.msg{font-size:22px;text-align:center}
+.gem{font-size:54px;text-align:center;animation:pop .6s ease-out}
+@keyframes pop{0%{transform:scale(.4)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.gem{animation:none}}
+.list{font-size:15px;color:var(--mute);max-height:30vh;overflow-y:auto}
+.padw{flex:1;min-height:110px;position:relative;background:#fff;border:4px solid #000;border-radius:16px;box-shadow:0 6px 0 #000;overflow:hidden}
+.padw span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#c9cff0;font-size:20px;pointer-events:none}
+.padw canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none}
+.ans{display:flex;align-items:center;justify-content:center;gap:14px;font-size:24px}
+.fi{display:inline-flex;flex-direction:column;align-items:center}
+.fi input{width:68px;height:48px;text-align:center;font:inherit;font-size:24px;border:4px solid #000;border-radius:12px;background:#fff;color:#111}
+.fi input:focus{outline:4px solid var(--yel)}
+.fi hr{width:68px;border:0;border-top:4px solid #fff;margin:5px 0}
+.row{display:flex;gap:8px}.row .ghost{flex:1;min-height:44px;font-size:14px;padding:6px}
+.gr{display:flex;gap:10px}.gr button{min-height:46px;font-size:18px;padding:6px}
+.scr{flex:1;min-height:0;display:flex;flex-direction:column;gap:10px}
+.sl{flex:1;min-height:0;overflow-y:auto;display:flex;flex-direction:column;gap:12px;padding:2px 2px 8px}
+.prz{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.prz small{display:block;font-size:14px;color:var(--mute)}
+.prz button{width:auto;min-width:96px;min-height:46px;padding:6px 12px;font-size:16px}
+button:disabled{opacity:.55;box-shadow:0 3px 0 #000;cursor:default}
+.in{min-width:0;height:44px;font:inherit;font-size:16px;border:3px solid #000;border-radius:10px;padding:0 8px;background:#fff;color:#111}
+.kpd{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:320px;margin:0 auto;width:100%}.kpd button{font-size:26px;min-height:60px;padding:6px}
+.two{display:flex;gap:10px}.two button{flex:1;font-size:18px;padding:8px}
+.zg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:2px}
+.zc{background:#fff;color:#111;border:3px solid #000;border-radius:12px;box-shadow:0 4px 0 #000;text-align:center;padding:6px 2px;font-size:12px;line-height:1.25}
+.zc b{display:block;font-size:34px;font-weight:400}.zc span{display:block}.zc small{color:#4b5599}
+.zc.r1,.cd.r1{background:#d9f4ff}.zc.r2,.cd.r2{background:#fff0a8;box-shadow:0 4px 0 #000,0 0 14px #ffd400}
+.zc.q0{background:#ffffff40;color:#fff9;box-shadow:none;border-color:#0006}
+.cd .em{font-size:76px;line-height:1.2;animation:pop .6s ease-out}
+@media(prefers-reduced-motion:reduce){.cd .em{animation:none}}
+.zc{cursor:pointer}.zc.q0{cursor:default}
+</style></head><body>
+<div class="app">
+<div class="top"><div class="stat">⭐ <b id="bl">0</b></div><div class="stat">🏅 Lv<b id="lv">1</b></div><div class="stat">📜 <b id="rt">0</b></div></div>
+<main id="v"></main>
+<button class="ghost" onclick="lock()">おうちの人</button>
+</div>
+<script>
+const Q={math:[]};
+(()=>{const g=(p,q)=>q?g(q,p%q):p;for(let b=2;b<=8;b++)for(let d=b+1;d<=9;d++){const l=b*d/g(b,d);if(l>36)continue;
+ for(const a of new Set([1,b-1]))for(const c of new Set([1,d-1])){if(a/b==c/d)continue;
+  Q.math.push({q:`${a}/${b} と ${c}/${d} を つうぶん しよう`,a:`${a*l/b}/${l} と ${c*l/d}/${l}`,w:[]})}}})();
+const W=[["学校","がっこう"],["外国","がいこく"],["毎日","まいにち"],["近い","ちかい"],["遠い","とおい"],["思う","おもう"],["話す","はなす"],["考える","かんがえる"],["数","かず"],["親切","しんせつ"],["元気","げんき"],["今週","こんしゅう"],["公園","こうえん"],["教室","きょうしつ"],["算数","さんすう"],["理科","りか"],["社会","しゃかい"],["弟","おとうと"],["姉","あね"],["妹","いもうと"],["兄","あに"],["昼","ひる"],["夜","よる"],["朝","あさ"],["夕方","ゆうがた"],["買う","かう"],["売る","うる"],["歩く","あるく"],["走る","はしる"],["食べる","たべる"],["回る","まわる"],["通る","とおる"],["道","みち"],["海","うみ"],["池","いけ"],["岩","いわ"],["野原","のはら"],["同じ","おなじ"]];
+const CELLS=12;
+const T=["きょう、{}で あそんだ。","{}の ひとと はなした。","{}、ほんを よむ。","えきは うちから {}。","うみは ここから {}。","あしたは はれると {}。","ともだちと たのしく {}。","ゆっくり {}。","{}を かぞえる。","{}な ひとに あった。","きょうも {}だよ。","{}は テストが ある。","{}で サッカーを した。","{}に はいる。","{}の しゅくだいを やる。","{}の じっけんは たのしい。","{}で ちずを みた。","{}と ゲームを する。","{}は ピアノが じょうず。","{}が ねている。","{}と かいものに いく。","{}ごはんを たべた。","{}は はやく ねる。","{}は ごはんを たべる。","{}に かえった。","おかしを {}。","ふるい ほんを {}。","みちを {}。","グラウンドを {}。","ごはんを {}。","こまが {}。","くるまが {}。","{}を まっすぐ いく。","なつは {}に いく。","{}に さかなが いる。","おおきな {}が ある。","{}で はしった。","ぼくと {}ものを かった。"];
+const tl=i=>(W[i][0].match(/[ぁ-ん]+$/)||[""])[0];
+const ks=i=>W[i][0].slice(0,W[i][0].length-tl(i).length);
+const rs=i=>W[i][1].slice(0,W[i][1].length-tl(i).length);
+let ANS="";
+const G=W.map(()=>2);
+const N=[["宿題","しゅくだい","{}を やってから あそぶ。",3],["運動","うんどう","まいあさ {}を する。",3],["病院","びょういん","{}で みて もらった。",3],["駅","えき","{}まで あるいて いく。",3],["暑い","あつい","なつは とても {}。",3],["寒い","さむい","ふゆの あさは {}。",3],["飲む","のむ","つめたい みずを {}。",3],["泳ぐ","およぐ","プールで {}。",3],["開ける","あける","まどを {}。",3],["起きる","おきる","あさ ろくじに {}。",3],["始める","はじめる","べんきょうを {}。",3],["終わる","おわる","じゅぎょうが {}。",3],["使う","つかう","えんぴつを {}。",3],["住む","すむ","ぼくは まちに {}。",3],["橋","はし","{}を わたって いく。",3],["湖","みずうみ","{}の みずが きれいだ。",3],["港","みなと","{}に おおきな ふねが ある。",3],["季節","きせつ","はるは すきな {}だ。",4],["笑う","わらう","おもしろくて おおきく {}。",4],["泣く","なく","かなしくて {}。",4],["働く","はたらく","ちちは かいしゃで {}。",4],["選ぶ","えらぶ","すきな ほんを {}。",4],["変わる","かわる","しんごうが あかに {}。",4],["冷たい","つめたい","ジュースが とても {}。",4],["約束","やくそく","ともだちと {}を した。",4],["試験","しけん","あしたは {}が ある。",4],["料理","りょうり","おかあさんの {}は おいしい。",4],["勇気","ゆうき","{}を だして はなした。",4],["旗","はた","{}を ふって おうえんした。",4],["借りる","かりる","としょかんで ほんを {}。",4],["鏡","かがみ","{}を みて かみを とかす。",4],["飛ぶ","とぶ","とりが そらを {}。",4],["祝う","いわう","たんじょうびを {}。",4],["求める","もとめる","たすけを {}。",4]];
+N.forEach(n=>{W.push([n[0],n[1]]);T.push(n[2]);G.push(n[3])});
+const M=`引く|ひく|ひもを {}。
+羽|はね|とりの {}が おちていた。
+雲|くも|そらに しろい {}が ある。
+何|なに|これは {}ですか。
+夏|なつ|{}やすみが たのしみだ。
+家|いえ|ともだちの {}に いった。
+歌|うた|すきな {}を うたう。
+画用紙|がようし|{}に えを かく。
+絵|え|すきな {}を かく。
+角|かど|{}を まがる。
+楽しい|たのしい|きょうは とても {}。
+生活|せいかつ|まいにちの {}。
+間|あいだ|いえと えきの {}に こうえんが ある。
+丸い|まるい|{}ボールを ける。
+顔|かお|あさ {}を あらう。
+汽車|きしゃ|{}に のって りょこうする。
+日記|にっき|まいにち {}を かく。
+帰る|かえる|いえに {}。
+弓|ゆみ|{}で まとを いる。
+牛|うし|{}が くさを たべる。
+魚|さかな|{}を つりに いく。
+東京|とうきょう|{}に いった。
+強い|つよい|{}かぜが ふく。
+形|かたち|ブロックの {}が ちがう。
+時計|とけい|{}を みる。
+言う|いう|ほんとうの ことを {}。
+戸|と|{}を しめる。
+古い|ふるい|{}おもちゃを すてる。
+午前|ごぜん|{}は がっこうに いる。
+後ろ|うしろ|いすの {}に たつ。
+国語|こくご|{}の じゅぎょうが すきだ。
+工作|こうさく|{}で ロボットを つくった。
+広い|ひろい|{}にわが ある。
+交番|こうばん|{}で みちを きく。
+光る|ひかる|ほしが {}。
+行く|いく|こうえんに {}。
+高い|たかい|{}やまに のぼる。
+黄色|きいろ|{}の はなが さいた。
+合う|あう|サイズが {}。
+谷|たに|ふかい {}を みおろす。
+黒い|くろい|{}ねこが いる。
+天才|てんさい|かれは {}だ。
+細い|ほそい|{}ひもを つかう。
+止まる|とまる|でんしゃが {}。
+市場|いちば|{}で やさいを かう。
+矢|や|{}を とばす。
+紙|かみ|{}で ひこうきを おる。
+寺|てら|おおきな {}が ある。
+自分|じぶん|{}で やって みる。
+弱い|よわい|{}かぜが ふく。
+首|くび|{}を まげる。
+秋|あき|{}は くりが おいしい。
+春|はる|{}の かぜが きもちいい。
+書く|かく|なまえを {}。
+少ない|すくない|のこりが {}。
+心|こころ|やさしい {}を もつ。
+新しい|あたらしい|{}くつを はく。
+地図|ちず|{}を ひろげる。
+声|こえ|おおきな {}で よぶ。
+星|ほし|よるの そらの {}。
+晴れる|はれる|あしたは {}。
+雪|ゆき|{}が ふって きた。
+船|ふね|{}に のって うみへ でる。
+線|せん|{}を まっすぐ ひく。
+組|くみ|ぼくの {}は にぎやかだ。
+多い|おおい|ひとが {}。
+太い|ふとい|{}きに のぼる。
+体|からだ|{}を うごかす。
+台|だい|{}の うえに はこを おく。
+知る|しる|なまえを {}。
+茶|ちゃ|あたたかい {}を のむ。
+長い|ながい|{}ひもを ほどく。
+鳥|とり|{}が とんで いく。
+直す|なおす|まちがいを {}。
+店|みせ|{}で おかしを かう。
+点|てん|テストで いい {}を とった。
+電車|でんしゃ|{}に のる。
+刀|かたな|ふるい {}を みた。
+冬|ふゆ|{}は ゆきが ふる。
+当たる|あたる|ボールが {}。
+答える|こたえる|せんせいの しつもんに {}。
+頭|あたま|{}を かく。
+読む|よむ|ほんを {}。
+内|うち|{}がわに はいる。
+南|みなみ|つばめは {}へ いく。
+肉|にく|{}を やいて たべる。
+馬|うま|{}に のる。
+麦|むぎ|{}ばたけを みた。
+半分|はんぶん|ケーキを {}に わる。
+父|ちち|{}と かいものに いく。
+風|かぜ|つよい {}が ふく。
+聞く|きく|はなしを {}。
+米|こめ|{}を たいて ごはんに する。
+母|はは|{}は りょうりが とくいだ。
+北|きた|{}の そらを みる。
+西|にし|{}の そらが あかい。
+万|まん|いち{}えんの おさつ。
+明るい|あかるい|{}へやで べんきょうする。
+鳴く|なく|にわとりが {}。
+毛|け|{}の ながい いぬ。
+門|もん|{}の まえで まつ。
+友だち|ともだち|{}と あそぶ。
+曜日|ようび|きょうは なんの {}か。
+来る|くる|あしたも ここに {}。
+里|さと|{}に かえる。`;
+M.trim().split("\n").forEach(l=>{const p=l.split("|");W.push([p[0],p[1]]);T.push(p[2]);G.push(2)});
+const M3=`悪い|わるい|{}ことは しない。
+安い|やすい|{}ねだんの くつ。
+暗い|くらい|へやが {}。
+医者|いしゃ|{}に みて もらう。
+委員|いいん|クラスの {}に なった。
+注意|ちゅうい|{}して わたる。
+育てる|そだてる|はなを {}。
+中央|ちゅうおう|こうえんの {}に ひろばが ある。
+横|よこ|{}を むいて はなす。
+屋根|やね|{}の うえに ねこが いる。
+温かい|あたたかい|{}スープを のむ。
+化ける|ばける|きつねが {}。
+荷物|にもつ|おもい {}を はこぶ。
+世界|せかい|{}ちずを みる。
+階|かい|に{}に あがる。
+感じる|かんじる|かぜを {}。
+漢字|かんじ|{}を れんしゅうする。
+図書館|としょかん|{}で ほんを かりる。
+岸|きし|ふねが {}に つく。
+学期|がっき|あたらしい {}が はじまる。
+客|きゃく|お{}さんが くる。
+研究|けんきゅう|むしの {}を する。
+急ぐ|いそぐ|ちこくしそうで {}。
+学級|がっきゅう|{}で はなしあう。
+宮|みや|お{}まいりに いく。
+野球|やきゅう|{}の しあいを みる。
+去年|きょねん|{}は ゆきが ふった。
+作業|さぎょう|ていねいに {}する。
+曲|きょく|すきな {}を ひく。
+薬局|やっきょく|{}で くすりを もらう。
+銀|ぎん|{}いろの はこ。
+区|く|おなじ {}に すんでいる。
+苦い|にがい|{}おちゃを のんだ。
+道具|どうぐ|{}を かたづける。
+君|きみ|{}は なにが すき？
+係|かかり|ぼくは そうじ{}だ。
+軽い|かるい|{}かばんを もつ。
+血|ち|からだの なかを {}が めぐる。
+決める|きめる|いく ところを {}。
+県|けん|ちがう {}に いった。
+車庫|しゃこ|くるまを {}に いれる。
+向かう|むかう|えきへ {}。
+幸せ|しあわせ|とても {}だ。
+番号|ばんごう|{}を よぶ。
+祭り|まつり|なつの {}に いく。
+皿|さら|{}を あらう。
+仕事|しごと|ちちは {}に いく。
+死んだ|しんだ|かぶとむしが {}。
+指|ゆび|{}で かぞえる。
+歯|は|まいにち {}を みがく。
+詩|し|{}を つくる。
+次|つぎ|{}は ぼくの ばんだ。
+持つ|もつ|かばんを {}。
+式|しき|にゅうがくの {}。
+実|み|きに {}が なる。
+写真|しゃしん|みんなで {}を とる。
+主人|しゅじん|おみせの {}は やさしい。
+守る|まもる|やくそくを {}。
+取る|とる|ボールを {}。
+酒屋|さかや|{}さんが はいたつに くる。
+受ける|うける|テストを {}。
+九州|きゅうしゅう|{}へ りょこうに いく。
+拾う|ひろう|どんぐりを {}。
+習う|ならう|ピアノを {}。
+集める|あつめる|シールを {}。
+重い|おもい|{}にもつを もつ。
+場所|ばしょ|あそぶ {}を さがす。
+助ける|たすける|ともだちを {}。
+昭和|しょうわ|{}の ころの おもちゃ。
+消す|けす|でんきを {}。
+商店|しょうてん|{}がいで かいものを した。
+文章|ぶんしょう|みじかい {}を かく。
+勝つ|かつ|しあいに {}。
+乗る|のる|バスに {}。
+植える|うえる|はなを {}。
+申|さる|{}どしの うまれだ。
+身|み|からだの {}を まもる。
+神様|かみさま|{}に おいのりする。
+深い|ふかい|{}いけに おちた。
+進む|すすむ|まえへ {}。
+整える|ととのえる|くつを {}。
+昔|むかし|{}ばなしを きく。
+全部|ぜんぶ|{}たべた。
+相手|あいて|{}を みて はなす。
+送る|おくる|てがみを {}。
+予想|よそう|てんきを {}する。
+息|いき|ふかく {}を すう。
+速い|はやい|あしが {}。
+家族|かぞく|{}で ごはんを たべる。
+他|ほか|{}の ひとにも きく。
+打つ|うつ|ボールを {}。
+反対|はんたい|{}がわの ホーム。
+待つ|まつ|バスを {}。
+代わり|かわり|{}に ぼくが いく。
+第一|だいいち|{}に あんぜんだ。
+炭|すみ|{}で やく。
+短い|みじかい|{}えんぴつを つかう。
+相談|そうだん|せんせいに {}する。
+着る|きる|あたたかい ふくを {}。
+柱|はしら|{}に よりかかる。
+丁目|ちょうめ|ここは にし さん{}だ。
+手帳|てちょう|{}に よていを かく。
+調べる|しらべる|じしょで {}。
+追う|おう|ねこを {}。
+予定|よてい|あしたの {}を かく。
+庭|にわ|{}で あそぶ。
+笛|ふえ|{}を ふく。
+鉄|てつ|{}ぼうに ぶらさがる。
+転ぶ|ころぶ|みちで {}。
+都会|とかい|{}の ひとは おおい。
+今度|こんど|{}の にちようびに いく。
+投げる|なげる|ボールを {}。
+豆|まめ|{}を にる。
+島|しま|{}に わたる。
+湯|ゆ|{}に はいる。
+登る|のぼる|やまに {}。
+一等|いっとう|かけっこで {}に なった。
+童話|どうわ|{}を よむ。
+農家|のうか|{}の ひとに おこめを もらった。
+波|なみ|{}が よせる。
+配る|くばる|プリントを {}。
+倍|ばい|に{}に する。
+箱|はこ|{}に おもちゃを いれる。
+畑|はたけ|{}で やさいを つくる。
+出発|しゅっぱつ|あさ はやく {}する。
+坂|さか|{}を のぼる。
+黒板|こくばん|{}に じを かく。
+皮|かわ|みかんの {}を むく。
+悲しい|かなしい|{}はなしを きいた。
+美しい|うつくしい|{}はなが さいた。
+鼻|はな|{}が つまる。
+筆|ふで|{}で じを かく。
+氷|こおり|{}を いれる。
+表|おもて|{}と うらを みる。
+秒|びょう|じゅう{}を はかる。
+品物|しなもの|おみせの {}を ならべる。
+負ける|まける|しあいに {}。
+服|ふく|あたらしい {}を きる。
+福引き|ふくびき|{}で あたりを ひく。
+平ら|たいら|{}な ところで やすむ。
+返す|かえす|ほんを {}。
+勉強|べんきょう|{}を がんばる。
+放す|はなす|とりを そらへ {}。
+味|あじ|{}が うすい。
+命|いのち|{}を たいせつに する。
+面白い|おもしろい|{}はなしを きいた。
+問題|もんだい|{}を ときおわる。
+役|やく|{}を えんじる。
+理由|りゆう|{}を せつめいする。
+油|あぶら|{}で あげる。
+有名|ゆうめい|{}な ひとに あった。
+遊ぶ|あそぶ|こうえんで {}。
+羊|ひつじ|{}の けを かる。
+洋服|ようふく|{}を えらぶ。
+葉|は|{}が おちる。
+太陽|たいよう|{}が のぼる。
+落ちる|おちる|はが {}。
+流れる|ながれる|かわが {}。
+旅|たび|{}に でる。
+両手|りょうて|{}で もつ。
+緑|みどり|{}の くさ。
+礼|れい|ありがとうと {}を いう。
+列|れつ|{}に ならぶ。
+練習|れんしゅう|ピアノを {}する。
+道路|どうろ|{}を わたる。`;
+M3.trim().split("\n").forEach(l=>{const p=l.split("|");W.push([p[0],p[1]]);T.push(p[2]);G.push(3)});
+const M4=`案|あん|いい {}が うかんだ。
+以上|いじょう|{}で はっぴょうを おわります。
+衣服|いふく|{}を たたむ。
+位置|いち|ものの {}を かえる。
+茨城|いばらき|{}の なっとうを たべた。
+英語|えいご|{}の うたを うたう。
+栄える|さかえる|まちが {}。
+愛媛|えひめ|{}の みかんは あまい。
+塩|しお|{}を ふる。
+岡山|おかやま|{}の ももを たべた。
+億|おく|いち{}という かずを しる。
+加える|くわえる|さとうを {}。
+果物|くだもの|{}を たべる。
+貨車|かしゃ|{}が ながく つながる。
+課題|かだい|{}を だす。
+芽|め|はるに {}が でる。
+佐賀|さが|{}で やきものを みた。
+改める|あらためる|まちがいを {}。
+機械|きかい|{}で つくる。
+害虫|がいちゅう|{}を たいじする。
+街|まち|にぎやかな {}を あるく。
+各自|かくじ|{}で じゅんびする。
+覚える|おぼえる|かんじを {}。
+新潟|にいがた|{}の おこめは おいしい。
+完全|かんぜん|{}に おぼえた。
+長官|ちょうかん|{}の おはなしを きく。
+管理|かんり|ビルを {}する。
+関係|かんけい|ふたりの {}を しらべる。
+観光|かんこう|{}に いく。
+願う|ねがう|へいわを {}。
+岐阜|ぎふ|{}の ふるい まちを たずねる。
+希望|きぼう|{}を もつ。
+食器|しょっき|{}を あらう。
+会議|かいぎ|{}で はなしあう。
+給食|きゅうしょく|{}の じかん。
+挙げる|あげる|てを {}。
+漁|りょう|さかなの {}を する。
+共通|きょうつう|{}の ともだち。
+協力|きょうりょく|みんなで {}する。
+競走|きょうそう|{}で いちばんに なる。
+北極|ほっきょく|{}の しろくま。
+熊本|くまもと|{}の ひとに あった。
+訓練|くんれん|ひなん{}を する。
+軍手|ぐんて|{}を はめる。
+郡|ぐん|ふたつの {}を しらべた。
+直径|ちょっけい|えんの {}を はかる。
+型|かた|ケーキの {}を つかう。
+景色|けしき|うつくしい {}。
+芸|げい|{}を みせる。
+欠ける|かける|ちゃわんが {}。
+結ぶ|むすぶ|ひもを {}。
+建てる|たてる|いえを {}。
+健康|けんこう|{}に きをつける。
+固い|かたい|{}パンを たべる。
+成功|せいこう|じっけんが {}した。
+好き|すき|いぬが {}だ。
+香川|かがわ|{}で うどんを たべた。
+気候|きこう|{}が あたたかい。
+差|さ|てんすうの {}を くらべる。
+野菜|やさい|{}を たべる。
+最後|さいご|{}の ページ。
+埼玉|さいたま|{}の ともだち。
+材料|ざいりょう|{}を かう。
+長崎|ながさき|{}の ちゃんぽん。
+昨日|きのう|{}は あめだった。
+札|さつ|お{}を かぞえる。
+印刷|いんさつ|プリントを {}する。
+観察|かんさつ|あさがおを {}する。
+参加|さんか|うんどうかいに {}する。
+産む|うむ|にわとりが たまごを {}。
+散歩|さんぽ|{}に いく。
+残る|のこる|おかしが {}。
+氏名|しめい|{}を かく。
+司会|しかい|{}を つとめる。
+児童|じどう|{}の あそびば。
+治る|なおる|けがが {}。
+滋賀|しが|{}の みずうみ。
+辞書|じしょ|{}で しらべる。
+鹿児島|かごしま|{}の さくらじま。
+失敗|しっぱい|{}しても つぎが ある。
+種|たね|はなの {}を まく。
+周り|まわり|いけの {}を はしる。
+順番|じゅんばん|{}を まもる。
+初めて|はじめて|{}ふじさんを みた。
+松|まつ|{}ぼっくりを ひろう。
+合唱|がっしょう|{}の れんしゅう。
+焼く|やく|さかなを {}。
+照らす|てらす|つきが みちを {}。
+賞|しょう|{}を もらう。
+大臣|だいじん|{}に てがみを おくった。
+信じる|しんじる|ともだちを {}。
+省く|はぶく|むだを {}。
+清い|きよい|{}みずが ながれる。
+静か|しずか|とても {}な よる。
+席|せき|{}に すわる。
+積む|つむ|つみきを {}。
+折る|おる|かみを {}。
+説明|せつめい|{}を きく。
+浅い|あさい|{}かわで あそぶ。
+戦う|たたかう|さいごまで {}。
+自然|しぜん|{}の なかを あるく。
+争う|あらそう|けんかして {}。
+倉庫|そうこ|にもつを {}に いれる。
+巣|す|とりの {}を みつけた。
+側|がわ|みぎ{}を あるく。
+続ける|つづける|れんしゅうを {}。
+卒業|そつぎょう|{}しき。
+孫|まご|おじいさんの {}。
+帯|おび|きものの {}を しめる。
+隊|たい|ぼうけん{}に はいる。
+配達|はいたつ|ゆうびんを {}する。
+単語|たんご|えいごの {}。
+仲間|なかま|{}と あそぶ。
+貯金|ちょきん|{}を する。
+兆|ちょう|いっ{}という おおきな かず。
+腸|ちょう|{}の はたらきを しらべる。
+低い|ひくい|{}へいを とびこえる。
+底|そこ|うみの {}を みる。
+停車|ていしゃ|えきで {}する。
+目的|もくてき|{}を きめる。
+事典|じてん|{}で しらべる。
+伝える|つたえる|きもちを {}。
+生徒|せいと|{}が あつまる。
+努力|どりょく|まいにち {}する。
+電灯|でんとう|{}を つける。
+特別|とくべつ|{}な ひ。
+徳島|とくしま|{}の すだち。
+栃木|とちぎ|{}の いちご。
+奈良|なら|{}の しかに あう。
+山梨|やまなし|{}の ももは あまい。
+熱い|あつい|{}おちゃを ふく。
+記念|きねん|{}しゃしんを とる。
+梅|うめ|{}の はなが さく。
+博物館|はくぶつかん|{}に いく。
+大阪|おおさか|{}に いった。
+飯|はん|ご{}を たべる。
+必ず|かならず|{}やる。
+投票|とうひょう|{}に いく。
+目標|もくひょう|{}を たてる。
+不安|ふあん|{}な きもち。
+工夫|くふう|{}して つくる。
+付く|つく|よごれが {}。
+府|ふ|おおさか{}に すむ。
+富山|とやま|{}の ひとに あった。
+副|ふく|{}かいちょうに なる。
+兵庫|ひょうご|{}けんの みなと。
+海辺|うみべ|{}を あるく。
+便り|たより|ともだちから {}が きた。
+包む|つつむ|かみで {}。
+方法|ほうほう|いい {}を かんがえる。
+牧場|ぼくじょう|{}で うしを みる。
+週末|しゅうまつ|{}は やすみだ。
+満月|まんげつ|{}の よる。
+未来|みらい|{}の はなしを する。
+市民|しみん|{}かいかんに いく。
+無い|ない|もう おかしが {}。
+必要|ひつよう|{}な ものを えらぶ。
+栄養|えいよう|{}を とる。
+浴びる|あびる|シャワーを {}。
+便利|べんり|{}な どうぐ。
+陸|りく|ふねから {}に あがる。
+量|りょう|みずの {}を はかる。
+輪|わ|{}に なって おどる。
+種類|しゅるい|いろいろな {}。
+号令|ごうれい|{}を かける。
+例|れい|{}を あげる。
+連れる|つれる|いぬを {}。
+老人|ろうじん|{}に せきを ゆずる。
+苦労|くろう|{}して つくった。
+記録|きろく|{}を つける。
+群馬|ぐんま|{}の おんせん。
+沖縄|おきなわ|{}の うみ。`;
+M4.trim().split("\n").forEach(l=>{const p=l.split("|");W.push([p[0],p[1]]);T.push(p[2]);G.push(4)});
+const NM={kanji:'漢字のどうくつ',math:'算数のとう'};
+let S={blocks:0,retry:[],start:null,end:null,g:[2],n:5};
+try{Object.assign(S,JSON.parse(localStorage.getItem('mission')||'{}'))}catch(e){}
+const save=()=>{try{localStorage.setItem('mission',JSON.stringify(S))}catch(e){}};
+if(S.pt==null)S.pt=S.blocks||0;if(!S.prizes)S.prizes=[{n:'おやつを えらべる',c:30},{n:'ゲーム 15ふん',c:60},{n:'すきな ごはん',c:150}];if(!S.log)S.log=[];if(!S.cards)S.cards={};
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $=id=>document.getElementById(id);
+const fr=s=>s.replace(/(\d+)\/(\d+)/g,'<span class="fr"><b>$1</b><i>$2</i></span>');
+const sh=a=>a.map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+const hm=t=>t?new Date(t).toLocaleString('ja-JP',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'—';
+let R=null;
+function stats(){$('bl').textContent=S.pt;$('lv').textContent=1+Math.floor(S.blocks/15);$('rt').textContent=S.retry.length}
+const allow=()=>W.map((_,i)=>i).filter(i=>S.g.includes(G[i]));
+function itm(s,i){if(s=='math')return Q.math[i];
+ const mode=Math.random()<.5?0:1,g=mode?ks:rs,A=allow(),key=x=>g(x).length,hom=x=>mode&&rs(x)===rs(i)&&tl(x)===tl(i),a=g(i),set=new Set([a]);
+ for(const x of A.filter(x=>x!==i&&key(x)===key(i)&&!set.has(g(x))&&!hom(x)).sort(()=>Math.random()-.5)){if(set.size>=4)break;set.add(g(x))}
+ for(const [,x] of A.filter(x=>x!==i&&!hom(x)).map(x=>[Math.abs(key(x)-key(i))+Math.random()*.5,x]).sort((p,q)=>p[0]-q[0])){if(set.size>=4)break;set.add(g(x))}
+ return {q:T[i].replace('{}','<u>'+(mode?rs(i):ks(i))+'</u>'+tl(i)),a,w:[...set].filter(x=>x!==a),p:mode?'せんの ところは どの漢字？':'せんの 漢字、なんてよむ？'}}
+function md(m){S.m=m;save();home()}
+function askWrite(i){
+ const d=R.items.map((_,j)=>`<i class="${j<R.k?'on':''}"></i>`).join('');
+ R.cur={q:T[i].replace('{}','<u>'+rs(i)+'</u>'+tl(i)),a:ks(i)};
+ $('v').innerHTML=`<div class="dots">${d}</div><p class="c mute">${NM.kanji}</p>
+<div class="win q">${R.cur.q}<p class="mute" style="margin-top:8px">せんの ところの 漢字を かこう</p></div>
+<div class="padw"><canvas id="pad"></canvas></div>
+<button class="gold" onclick="see()">こたえを みる</button>
+<div class="row"><button class="ghost" onclick="padClear()">けす</button><button class="ghost" onclick="skip()">わからない</button><button class="ghost" onclick="rest()">ひと休み</button></div>`;
+ padInit(ks(i).length)}
+function padInit(n){
+ const c=$('pad'),dpr=window.devicePixelRatio||1;c.width=c.clientWidth*dpr;c.height=c.clientHeight*dpr;
+ const x=c.getContext('2d');
+ const guide=()=>{const w=c.clientWidth,h=c.clientHeight,cw=w/n;x.setTransform(dpr,0,0,dpr,0,0);x.clearRect(0,0,w,h);
+  x.strokeStyle='#d5daf5';x.lineWidth=2;x.setLineDash([6,6]);x.beginPath();
+  for(let k=0;k<n;k++){x.moveTo(cw*k+cw/2,0);x.lineTo(cw*k+cw/2,h)}x.moveTo(0,h/2);x.lineTo(w,h/2);x.stroke();
+  x.setLineDash([]);x.strokeStyle='#9aa3d8';x.lineWidth=3;x.beginPath();
+  for(let k=1;k<n;k++){x.moveTo(cw*k,0);x.lineTo(cw*k,h)}x.stroke();
+  x.lineWidth=7;x.lineCap='round';x.lineJoin='round';x.strokeStyle='#222'};
+ guide();let on=false;
+ c.onpointerdown=e=>{on=true;c.setPointerCapture(e.pointerId);x.beginPath();x.moveTo(e.offsetX,e.offsetY);x.lineTo(e.offsetX+.1,e.offsetY);x.stroke()};
+ c.onpointermove=e=>{if(on){x.lineTo(e.offsetX,e.offsetY);x.stroke()}};
+ c.onpointerup=c.onpointercancel=()=>{on=false};
+ R.pad=guide}
+function see(){const it=R.cur;
+ $('v').innerHTML=`<div class="win q">${it.q.replace(/<u>.*?<\/u>/,'<u>'+it.a+'</u>')}<p class="mute" style="margin-top:8px">あっていた？ じぶんで きめよう</p></div>
+<div class="opts"><button class="gold" onclick="selfOk(true)">あってた</button><button style="background:#ffb3d1" onclick="selfOk(false)">ちがった</button></div>`}
+function selfOk(ok){mark(!ok);fb(ok?'ok':'no',ok?'せいかい！✨':'だいじょうぶ！あとで もう1回 やろう')}
+function gr(n){S.g=[n];save();home()}
+function home(){stats();$('v').innerHTML=`<h1>きょうのミッション</h1><div class="gr">${[2,3,4].map(n=>`<button class="${S.g[0]==n?'gold':''}" onclick="gr(${n})">${n}年</button>`).join('')}</div><div class="gr">${[['c','漢字：えらぶ'],['w','漢字：かく']].map(([k,t])=>`<button class="${(S.m||'c')==k?'gold':''}" onclick="md('${k}')">${t}</button>`).join('')}</div><p class="c mute">どっちから はじめる？</p>
+<button class="big win k" onclick="go('kanji')"><span class="ic">📖</span><span>${NM.kanji}<small>${S.n}もん</small></span></button>
+<button class="big win m" onclick="go('math')"><span class="ic">🧮</span><span>${NM.math}<small>${S.n}もん・かいて とく</small></span></button><div class="two"><button class="gold" onclick="shop()">🎁 ごほうび</button><button style="background:#ffd400" onclick="zukan()">📖 ずかん ${CH.filter((_,i)=>S.cards[i]).length}/${CH.length}</button></div>`}
+function go(s){
+ if(!S.start||S.end){S.start=new Date().toISOString();S.end=null;save()}
+ const r=S.retry.find(x=>x.s==s);let ids=r?[r.i]:[];
+ const rest=sh((s=='math'?[...Q.math.keys()]:allow()).filter(i=>!ids.includes(i)));
+ R={s,items:ids.concat(rest).slice(0,S.n),k:0};ask()}
+function ask(){
+ if(R.s=='kanji'&&S.m=='w')return askWrite(R.items[R.k]);const it=R.cur=itm(R.s,R.items[R.k]);if(R.s=='math')return askMath(it);R.opts=sh([it.a,...it.w]);
+ const d=R.items.map((_,j)=>`<i class="${j<R.k?'on':''}"></i>`).join('');
+ $('v').innerHTML=`<div class="dots">${d}</div><p class="c mute">${NM[R.s]}</p>
+<div class="win q">${fr(it.q)}${it.p?`<p class="mute" style="margin-top:8px">${it.p}</p>`:''}</div>
+<div class="opts">${R.opts.map((o,j)=>`<button onclick="pick(${j})">${R.s=='math'?fr(o):o}</button>`).join('')}</div>
+<button class="ghost" onclick="skip()">わからない（しるしをつける）</button>
+<button class="ghost" onclick="rest()">ひと休み</button>`}
+function mark(add){const i=R.items[R.k];const has=S.retry.some(x=>x.s==R.s&&x.i==i);
+ if(add&&!has)S.retry.push({s:R.s,i});if(!add)S.retry=S.retry.filter(x=>!(x.s==R.s&&x.i==i));S.blocks++;S.pt++;save();stats()}
+function fb(cls,t,ans){const last=R.k==R.items.length-1;
+ $('v').innerHTML=`<div class="win ${cls} msg">${t}${ans?`<p style="margin-top:8px">こたえ：${R.s=='math'?fr(ans):ans}</p>`:''}<p class="mute" style="margin-top:6px">⭐ ポイント +1</p></div>
+<button class="gold" onclick="next()">${last?'ミッション かんりょう！':'つぎへ'}</button>`}
+function pick(j){const it=R.cur;
+ if(R.opts[j]==it.a){mark(false);fb('ok','せいかい！✨')}
+ else{mark(true);fb('no','おしい！あとで もう1回 やろう',it.a)}}
+function askMath(it){
+ const d=R.items.map((_,j)=>`<i class="${j<R.k?'on':''}"></i>`).join('');
+ const f=n=>`<span class="fi"><input id="n${n}" inputmode="numeric" aria-label="ぶんし${n}"><hr><input id="d${n}" inputmode="numeric" aria-label="ぶんぼ${n}"></span>`;
+ $('v').innerHTML=`<div class="dots">${d}</div><p class="c mute">${NM.math}</p>
+<div class="win q" style="padding:12px">${fr(it.q)}</div>
+<div class="padw"><span>ここに かいて かんがえよう</span><canvas id="pad"></canvas></div>
+<div class="ans">${f(1)}<span>と</span>${f(2)}</div><p class="hint c mute"></p>
+<button class="gold" onclick="chk()">こたえあわせ</button>
+<div class="row"><button class="ghost" onclick="padClear()">けしゴム</button><button class="ghost" onclick="skip()">わからない</button><button class="ghost" onclick="rest()">ひと休み</button></div>`;
+ const c=$('pad'),dpr=window.devicePixelRatio||1;c.width=c.clientWidth*dpr;c.height=c.clientHeight*dpr;
+ const x=c.getContext('2d');x.scale(dpr,dpr);x.lineWidth=4;x.lineCap='round';x.lineJoin='round';x.strokeStyle='#222';
+ let on=false;
+ c.onpointerdown=e=>{on=true;c.setPointerCapture(e.pointerId);x.beginPath();x.moveTo(e.offsetX,e.offsetY);x.lineTo(e.offsetX+.1,e.offsetY);x.stroke()};
+ c.onpointermove=e=>{if(on){x.lineTo(e.offsetX,e.offsetY);x.stroke()}};
+ c.onpointerup=c.onpointercancel=()=>{on=false};
+ R.pad=()=>x.clearRect(0,0,c.width,c.height)}
+function padClear(){R.pad&&R.pad()}
+function chk(){const it=Q.math[R.items[R.k]];
+ const v=['n1','d1','n2','d2'].map(i=>parseInt($(i).value,10));
+ if(v.some(isNaN)){document.querySelector('.hint').textContent='4つの マスに すうじを いれてね';return}
+ const [a,b,c,d]=it.q.match(/(\d+)\/(\d+) と (\d+)\/(\d+)/).slice(1).map(Number),[n1,d1,n2,d2]=v;
+ const g=(p,q)=>q?g(q,p%q):p,l=b*d/g(b,d);
+ const ok=d1>0&&d1==d2&&n1*b==a*d1&&n2*d==c*d2;
+ if(ok){mark(false);fb('ok',d1==l?'せいかい！✨':`せいかい！✨<br><span class="mute">いちばん小さい ぶんぼは ${l} だよ</span>`)}
+ else{mark(true);fb('no','おしい！あとで もう1回 やろう',it.a)}}
+function skip(){const it=R.cur;mark(true);fb('ok','しるしを つけたよ。ここまで来たのが すごい！',it.a)}
+function next(){R.k++;R.k<R.items.length?ask():clear_()}
+function rest(){$('v').innerHTML=`<h1>ひと休み</h1><p class="c">のんびり してね。じゅんびが できたら もどろう。</p><button class="gold" onclick="ask()">もどる</button>`}
+const CH=[
+{e:'🐺',n:'フェンリル',o:'北欧',f:'かみさまを のみこむ ほくおうの おおかみ',r:0},
+{e:'🐍',n:'ヨルムンガンド',o:'北欧',f:'せかいを ぐるっと とりまく おおへび',r:0},
+{e:'🦊',n:'きゅうびのきつね',o:'日本',f:'しっぽが 9ほんある ばけぎつね',r:0},
+{e:'👹',n:'あかおに',o:'日本',f:'こんぼうを もつ ちからもちの おに',r:0},
+{e:'🦅',n:'ホルス',o:'エジプト',f:'そらを まもる ハヤブサの かみさま',r:0},
+{e:'🦂',n:'セルケト',o:'エジプト',f:'どくから まもる サソリの めがみ',r:0},
+{e:'🧌',n:'トロール',o:'北欧',f:'やまに すむ おおきな ようかい',r:0},
+{e:'🧞',n:'ジン',o:'アラビア',f:'アラビアの まほうの せいれい',r:0},
+{e:'🐢',n:'げんぶ',o:'中国',f:'かめと へびが あわさった きたの まもりがみ',r:1},
+{e:'🐯',n:'びゃっこ',o:'中国',f:'にしを まもる しろい とら',r:1},
+{e:'🐴',n:'ペガサス',o:'ギリシャ',f:'つばさの はえた でんせつの うま',r:1},
+{e:'🔱',n:'ポセイドン',o:'ギリシャ',f:'うみを おさめる かみさま',r:1},
+{e:'🗡️',n:'エクスカリバー',o:'イギリス',f:'アーサーおうが もつ でんせつの けん',r:1},
+{e:'🐉',n:'ヤマタノオロチ',o:'日本',f:'あたまが 8つある にほんの おおへび',r:2},
+{e:'⚡',n:'ゼウス',o:'ギリシャ',f:'かみなりを つかう かみさまの おう',r:2},
+{e:'☀️',n:'アマテラス',o:'日本',f:'たいように つながる にほんの かみさま',r:2}];
+const RN=['ふつう','レア','スーパーレア'];
+function chestOK(){const d=new Date().toLocaleDateString('sv');if(!S.cd||S.cd.d!=d)S.cd={d,n:0};return S.cd.n<3}
+function clear_(){S.end=new Date().toISOString();save();stats();
+ if(chestOK())scr(`<div class="gem">🎁</div><h1>たからばこ！</h1><p class="c">さいくつ かんりょう！ ⭐ +${R.items.length}</p><button class="gold" onclick="openC()">あける</button>`);
+ else done(`<div class="gem">💎</div><h1>さいくつ かんりょう！</h1><p class="c">⭐ ポイント +${R.items.length} ゲット！</p><p class="c mute">きょうの たからばこは おしまい。また あした！</p>`)}
+function openC(){if(!chestOK())return home();S.cd.n++;
+ const r=Math.random()*100,rar=r<5?2:r<30?1:0,pool=CH.map((_,i)=>i).filter(i=>CH[i].r==rar),id=pool[Math.floor(Math.random()*pool.length)];
+ const had=S.cards[id]||0;S.cards[id]=had+1;save();const c=CH[id],lv=Math.min(5,S.cards[id]);
+ done(`<div class="gem" style="font-size:30px">✨</div><div class="win msg cd r${c.r}"><div class="em">${c.e}</div>${c.n}<p class="mute">${c.o}・${RN[c.r]}</p><p style="font-size:16px;margin-top:4px">${c.f}</p><p class="mute" style="margin-top:4px">${had?'なかよしLv '+lv+(lv>=5?'（MAX）':''):'あたらしい なかま！'}</p></div>`)}
+function done(h){const other=R.s=='kanji'?'math':'kanji';
+ scr(h+`<button onclick="go('${R.s}')">もう1セット</button><button onclick="go('${other}')">${NM[other]}へ</button><button class="ghost" onclick="home()">きょうは ここまで</button>`)}
+function zd(i){const c=CH[i];
+ scr(`<div class="win msg cd r${c.r}"><div class="em">${c.e}</div>${c.n}<p class="mute">${c.o}・${RN[c.r]}</p><p style="font-size:16px;margin-top:4px">${c.f}</p><p class="mute" style="margin-top:4px">なかよしLv ${Math.min(5,S.cards[i])}</p></div><button onclick="zukan()">もどる</button>`)}
+function zukan(){const n=CH.filter((_,i)=>S.cards[i]).length;
+ scr(`<h1>ずかん</h1><p class="c">${n} / ${CH.length} あつめた</p><div class="sl"><div class="zg">${CH.map((c,i)=>S.cards[i]?`<div class="zc r${c.r}" onclick="zd(${i})"><b>${c.e}</b><span>${c.n}</span><small>Lv ${Math.min(5,S.cards[i])}</small></div>`:`<div class="zc q0"><b>？</b><span>？？？</span></div>`).join('')}</div></div><button onclick="home()">もどる</button>`)}
+function scr(h){$('v').innerHTML='<div class="scr">'+h+'</div>'}
+function shop(){
+ const rows=S.prizes.map((p,j)=>`<div class="win prz"><span>${esc(p.n)}<small>${p.c}ポイント</small></span>${S.pt>=p.c?`<button class="gold" onclick="ex(${j})">こうかん</button>`:`<button disabled>あと ${p.c-S.pt}</button>`}</div>`).join('')||'<p class="c mute">ごほうびは おうちの人が きめるよ</p>';
+ scr(`<h1>ごほうび</h1><p class="c">⭐ ${S.pt} ポイント</p><div class="sl">${rows}</div><button onclick="home()">もどる</button>`)}
+function ex(j){const p=S.prizes[j];if(!p||S.pt<p.c)return shop();
+ scr(`<div class="win msg">🎁 ${esc(p.n)}<p class="mute" style="margin-top:6px">${p.c}ポイントと こうかん</p><p style="margin-top:8px;font-size:16px">おうちの人と いっしょに おしてね</p></div><button class="gold" onclick="doEx(${j})">こうかんする</button><button class="ghost" onclick="shop()">やめる</button>`)}
+function doEx(j){const p=S.prizes[j];if(!p||S.pt<p.c)return shop();
+ S.pt-=p.c;S.log.push({n:p.n,c:p.c,t:new Date().toISOString(),d:false});save();stats();
+ scr(`<div class="gem">🎫</div><h1>こうかん ずみ！</h1><div class="win msg">${esc(p.n)}<p class="mute" style="margin-top:6px">おうちの人に みせてね</p></div><button onclick="shop()">もどる</button>`)}
+let KP={buf:'',mode:'',first:''};
+const hp=p=>{let h=7;for(const c of p)h=(h*31+c.charCodeAt(0))%1000003;return 'h'+h};
+function lock(){KP={buf:'',mode:S.pin?'in':'new',first:''};kp()}
+function chPin(){KP={buf:'',mode:'new',first:''};kp()}
+function kp(msg){
+ const t={in:'あんしょうばんごうを いれてね',new:'あたらしい 4けたの あんしょうばんごうを きめてね',again:'もういちど おなじ ばんごうを いれてね'}[KP.mode];
+ scr(`<h1>おうちの人</h1><p class="c">${msg||t}</p><div class="dots">${[0,1,2,3].map(i=>`<i class="${i<KP.buf.length?'on':''}"></i>`).join('')}</div><div class="kpd">${[1,2,3,4,5,6,7,8,9,'⌫',0,'×'].map(k=>`<button onclick="kk('${k}')">${k}</button>`).join('')}</div>`)}
+function kk(k){
+ if(k=='×')return home();
+ if(k=='⌫'){KP.buf=KP.buf.slice(0,-1);return kp()}
+ if(KP.buf.length>=4)return;KP.buf+=k;
+ if(KP.buf.length<4)return kp();
+ const b=KP.buf;KP.buf='';
+ if(KP.mode=='in'){if(S.pin==hp(b))return parent_();return kp('ちがうよ。もういちど')}
+ if(KP.mode=='new'){KP.first=b;KP.mode='again';return kp()}
+ if(b==KP.first){S.pin=hp(b);save();parent_()}else{KP.mode='new';kp('ばんごうが ちがうよ。さいしょから')}}
+function sn(n){S.n=n;save();parent_()}
+function dn(j){S.log[j].d=!S.log[j].d;save();parent_()}
+function dp(j){S.prizes.splice(j,1);save();parent_()}
+function ap(){const n=$('pn').value.trim(),c=parseInt($('pc').value,10);if(!n||!(c>0))return;S.prizes.push({n,c});S.prizes.sort((a,b)=>a.c-b.c);save();parent_()}
+function parent_(){
+ const l=S.retry.map(x=>'・'+itm(x.s,x.i).q.replace(/<[^>]+>/g,'')+'（'+NM[x.s]+'）').join('<br>')||'なし';
+ const lg=S.log.map((g,j)=>`<div class="prz"><span>${hm(g.t)} ${esc(g.n)}<small>${g.c}ポイント</small></span><button class="${g.d?'':'gold'}" onclick="dn(${j})">${g.d?'わたした✓':'わたした？'}</button></div>`).reverse().join('')||'なし';
+ const pz=S.prizes.map((p,j)=>`<div class="prz"><span>${esc(p.n)}<small>${p.c}ポイント</small></span><button class="ghost" onclick="dp(${j})">けす</button></div>`).join('');
+ scr(`<div class="sl"><div class="win"><p>はじめた：${hm(S.start)}</p><p>おわった：${S.end?hm(S.end):'まだ'}</p><p>ポイント：⭐ ${S.pt}</p></div>
+<div class="win"><p class="mute">こうかんの きろく</p>${lg}</div>
+<div class="win"><p class="mute">ごほうびを きめる</p>${pz}<div class="prz" style="margin-top:8px"><input id="pn" class="in" placeholder="なまえ" style="flex:1"><input id="pc" class="in" inputmode="numeric" placeholder="pt" style="width:70px"><button class="gold" onclick="ap()">ついか</button></div></div>
+<div class="win"><p class="mute">1セットの もんだい数</p><div class="two">${[3,5,7].map(n=>`<button class="${S.n==n?'gold':''}" onclick="sn(${n})">${n}もん</button>`).join('')}</div></div>
+<div class="win"><p class="mute">あとで一緒にみる問題</p><div class="list">${l}</div></div><button class="ghost" onclick="chPin()">あんしょうばんごうを かえる</button></div><button onclick="home()">もどる</button>`)}
+home();
+</script></body></html>
