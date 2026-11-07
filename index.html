@@ -539,7 +539,7 @@ const NM={kanji:'漢字のどうくつ',math:'算数のとう'};
 let S={blocks:0,retry:[],start:null,end:null,g:[2],n:5};
 try{Object.assign(S,JSON.parse(localStorage.getItem('mission')||'{}'))}catch(e){}
 const save=()=>{try{localStorage.setItem('mission',JSON.stringify(S))}catch(e){}};
-if(S.pt==null)S.pt=S.blocks||0;if(!S.prizes)S.prizes=[{n:'おやつを えらべる',c:30},{n:'ゲーム 15ふん',c:60},{n:'すきな ごはん',c:150}];if(!S.log)S.log=[];if(!S.cards)S.cards={};
+if(S.pt==null)S.pt=S.blocks||0;if(!S.prizes)S.prizes=[];if(!S.log)S.log=[];if(!S.cards)S.cards={};
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const $=id=>document.getElementById(id);
 const fr=s=>s.replace(/(\d+)\/(\d+)/g,'<span class="fr"><b>$1</b><i>$2</i></span>');
@@ -693,15 +693,17 @@ function kk(k){
  if(b==KP.first){S.pin=hp(b);save();parent_()}else{KP.mode='new';kp('ばんごうが ちがうよ。さいしょから')}}
 function sn(n){S.n=n;save();parent_()}
 function dn(j){S.log[j].d=!S.log[j].d;save();parent_()}
+function dpAsk(){scr(`<div class="win msg">ごほうびを ぜんぶ けす？<p class="mute" style="margin-top:6px">もとには もどせないよ</p></div><button class="gold" onclick="dpAll()">ぜんぶ けす</button><button class="ghost" onclick="parent_()">やめる</button>`)}
+function dpAll(){S.prizes=[];save();parent_()}
 function dp(j){S.prizes.splice(j,1);save();parent_()}
 function ap(){const n=$('pn').value.trim(),c=parseInt($('pc').value,10);if(!n||!(c>0))return;S.prizes.push({n,c});S.prizes.sort((a,b)=>a.c-b.c);save();parent_()}
 function parent_(){
  const l=S.retry.map(x=>'・'+itm(x.s,x.i).q.replace(/<[^>]+>/g,'')+'（'+NM[x.s]+'）').join('<br>')||'なし';
  const lg=S.log.map((g,j)=>`<div class="prz"><span>${hm(g.t)} ${esc(g.n)}<small>${g.c}ポイント</small></span><button class="${g.d?'':'gold'}" onclick="dn(${j})">${g.d?'わたした✓':'わたした？'}</button></div>`).reverse().join('')||'なし';
- const pz=S.prizes.map((p,j)=>`<div class="prz"><span>${esc(p.n)}<small>${p.c}ポイント</small></span><button class="ghost" onclick="dp(${j})">けす</button></div>`).join('');
+ const pz=S.prizes.map((p,j)=>`<div class="prz"><span>${esc(p.n)}<small>${p.c}ポイント</small></span><button class="ghost" onclick="dp(${j})">けす</button></div>`).join('')||'<p class="mute">まだ ないよ。したから ついかしてね</p>';
  scr(`<div class="sl"><div class="win"><p>はじめた：${hm(S.start)}</p><p>おわった：${S.end?hm(S.end):'まだ'}</p><p>ポイント：⭐ ${S.pt}</p></div>
 <div class="win"><p class="mute">こうかんの きろく</p>${lg}</div>
-<div class="win"><p class="mute">ごほうびを きめる</p>${pz}<div class="prz" style="margin-top:8px"><input id="pn" class="in" placeholder="なまえ" style="flex:1"><input id="pc" class="in" inputmode="numeric" placeholder="pt" style="width:70px"><button class="gold" onclick="ap()">ついか</button></div></div>
+<div class="win"><p class="mute">ごほうびを きめる</p>${pz}${S.prizes.length?'<button class="ghost" onclick="dpAsk()" style="margin-top:6px">ぜんぶ けす</button>':''}<div class="prz" style="margin-top:8px"><input id="pn" class="in" placeholder="なまえ" style="flex:1"><input id="pc" class="in" inputmode="numeric" placeholder="pt" style="width:70px"><button class="gold" onclick="ap()">ついか</button></div></div>
 <div class="win"><p class="mute">1セットの もんだい数</p><div class="two">${[3,5,7].map(n=>`<button class="${S.n==n?'gold':''}" onclick="sn(${n})">${n}もん</button>`).join('')}</div></div>
 <div class="win"><p class="mute">あとで一緒にみる問題</p><div class="list">${l}</div></div><button class="ghost" onclick="chPin()">あんしょうばんごうを かえる</button></div><button onclick="home()">もどる</button>`)}
 home();
