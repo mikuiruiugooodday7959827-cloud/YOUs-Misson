@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><title>きょうのミッション</title>
+<html lang="ja"><head><meta charset="utf-8"><title>今日のミッション</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="ミッション"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#3b5bff"><link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFLklEQVR4nO3d23HbMBRFUSiTctyBS3F9KSUduB/nQzMKh+SB+ADBc3H3+srkYcPk9gUkW87j8+unAGt+3b0A+CIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMRRSil//zze/k5Cv+9egAtqWGJyyCzIhTggZY+D8VCRPY665OkQB6TUcWwZDJmHR+o4UJc3jtWR8PPdfyG+8saxXdqdhTj+Y2zMJI2jMgxI5CVpHHvl3FkyxvH2KMrweMoYxzEJhwdxlMKoENLFsXEAkEtJGMcZ2XaWXHHwrOguueLYhWiyx7G3gFQ7S6I4DtzX5MMjURyt5BkeWeLgKHpAljgOyxxQ3jjO3PUkO0uKOJLcy+ZSxHFS2p1l/DguOopmmEbjx9FEzuGRMY5Wd3r44TF4HMPfv0sNHkdDCXeWkePo8Kzo2JNp5DhwUq44To6NbDvLsHF0G/gD7yzDxnGRVMNjzDg6f4F+1OHh/qMmo1z3Y+v8/PppvpKGHtetz+q+th0bj4+Wb+2k6+7gVduKVRlju+5Sj3nmmGl+2khyLB0/jotuZIY+3A+kzvfg/Nqszi5L9xxInW+5p0pG8Q6kpbpo888YN7eUUS6dHC9qhDA/tlBldLhxPQ6k6sN4fDBCairXp8+zZ50erbDF7HXXVjLV76EsfWznUEbpc+aY4QhSd+9WMnXDk2AcQZTbDxkz9zxDyhazZLKVTN329Dl9TBmWUe792gp9PHmWUW45kC5lPqJaHTJmLL4qm/OI6nb8XLKIo+TbYmy3kimXOEqmPkKUUaziKDn6iFJGMTmQLo16RDU/ZMx4TY6X8Y6o/sfPJdM4ylhbTKCtZMo3jjJKH0HLKLZnjpm4R5BwW8mU9eR4iXgEiXjImIkRR4m2xcTdSqbCxFHi9DFGGSVWHCVCH8OUUfxf8bb0vMSxXqgdLounYJMDPREHpHHiMHnOw2QZTYwTB5oLGUes02gJuOCnkHGgj0HisNrprRZzRrw4go7oiMuOFwe6GSEOwzFuuKQDRogDFwkWR8Sd+yXc4oPFgZ7Cx2G7u9subLtIcVw9ljt8R0isnSXe93Nc4ZXF8xcDfNI3EWlyLDW5i8uB0WqERI8s9eSoRMAIKYEmR/Pdest4uOIUEujYkXFy7LrlmUdImMmxdOyGHRsGh0dI6KpixNFkFG95eVz9pQ+tdpkoO0uWbWV7FvWXPjw+Yg+DXWJMjqXtd+jYwGg4QuLGNPjkOLOPMEICTI5jO/TJE8aWv3PmFBLi2DHm5GiSxewvJxwhASbHUuVmtBoYu/7V23catB73n+yz+vm6eq23TPgmH+yx//VydXnmFz/k5FjqVkb97Tj/pKED4p05Zp+dPbOYvcFdp5Cf73jdxJ4cW44X143u4UeIdRyV3f26g+cu9fjertD8Aa11HMq9A2P13ak/Cj1C4sXhMDBW3+nbERLuAa3vQ9kDI9fhYwm67FXxJodicok772iXGiEOw/vhtp5jwsdhexsMk93LNI4tO3eIq79lhbYPaE3jeMs/i5cQEa8yjaP+PTgRr/Xb7yoyZBqHYnsdtwiXtW8cs+sY7soqy4/rrpW85fskGG7nOzlwO+KARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAPSP35lr1xR6yh+AAAAAElFTkSuQmCC">
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
@@ -535,7 +535,7 @@ const M4=`案|あん|いい {}が うかんだ。
 群馬|ぐんま|{}の おんせん。
 沖縄|おきなわ|{}の うみ。`;
 M4.trim().split("\n").forEach(l=>{const p=l.split("|");W.push([p[0],p[1]]);T.push(p[2]);G.push(4)});
-const NM={kanji:'漢字のどうくつ',math:'算数のとう'};
+const NM={kanji:'漢字の洞窟',math:'算数の塔'};
 let S={blocks:0,retry:[],start:null,end:null,g:[2],n:5};
 try{Object.assign(S,JSON.parse(localStorage.getItem('mission')||'{}'))}catch(e){}
 const save=()=>{try{localStorage.setItem('mission',JSON.stringify(S))}catch(e){}};
@@ -582,9 +582,9 @@ function see(){const it=R.cur;
 <div class="opts"><button class="gold" onclick="selfOk(true)">あってた</button><button style="background:#ffb3d1" onclick="selfOk(false)">ちがった</button></div>`}
 function selfOk(ok){mark(!ok);fb(ok?'ok':'no',ok?'せいかい！✨':'だいじょうぶ！あとで もう1回 やろう')}
 function gr(n){S.g=[n];save();home()}
-function home(){stats();$('v').innerHTML=`<h1>きょうのミッション</h1><div class="gr">${[2,3,4].map(n=>`<button class="${S.g[0]==n?'gold':''}" onclick="gr(${n})">${n}年</button>`).join('')}</div><div class="gr">${[['c','漢字：えらぶ'],['w','漢字：かく']].map(([k,t])=>`<button class="${(S.m||'c')==k?'gold':''}" onclick="md('${k}')">${t}</button>`).join('')}</div><p class="c mute">どっちから はじめる？</p>
-<button class="big win k" onclick="go('kanji')"><span class="ic">📖</span><span>${NM.kanji}<small>${S.n}もん</small></span></button>
-<button class="big win m" onclick="go('math')"><span class="ic">🧮</span><span>${NM.math}<small>${S.n}もん・かいて とく</small></span></button><div class="two"><button class="gold" onclick="shop()">🎁 ごほうび</button><button style="background:#ffd400" onclick="zukan()">📖 ずかん ${CH.filter((_,i)=>S.cards[i]).length}/${CH.length}</button></div>`}
+function home(){stats();$('v').innerHTML=`<h1>今日のミッション</h1><div class="gr">${[2,3,4].map(n=>`<button class="${S.g[0]==n?'gold':''}" onclick="gr(${n})">${n}年</button>`).join('')}</div><div class="gr">${[['c','漢字：選ぶ'],['w','漢字：書く']].map(([k,t])=>`<button class="${(S.m||'c')==k?'gold':''}" onclick="md('${k}')">${t}</button>`).join('')}</div><p class="c mute">どっちから始める？</p>
+<button class="big win k" onclick="go('kanji')"><span class="ic">📖</span><span>${NM.kanji}<small>${S.n}問</small></span></button>
+<button class="big win m" onclick="go('math')"><span class="ic">🧮</span><span>${NM.math}<small>${S.n}問・書いて解く</small></span></button><div class="two"><button class="gold" onclick="shop()">🎁 ごほうび</button><button style="background:#ffd400" onclick="zukan()">📖 図鑑 ${CH.filter((_,i)=>S.cards[i]).length}/${CH.length}</button></div>`}
 function go(s){
  if(!S.start||S.end){S.start=new Date().toISOString();S.end=null;save()}
  const r=S.retry.find(x=>x.s==s);let ids=r?[r.i]:[];
